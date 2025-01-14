@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000000;
+}
+
+body{
+    font-family: 'Poppins',  sans-serif;
+}
+
+h1{
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+h5{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000000;
+}
+
+h6{
+    color: #d8d8d8;
+}
+
+button{
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    background-color: #000000;
+    color: aliceblue;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+hr{
+    width: 50px;
+    height: 2px;
+    background-color: crimson;
+}
+
+.star{
+    padding: 10px  0; 
+}
+
+.star i{
+    font-size: 0.8rem;
+    color: goldenrod;
+}
+
+button:hover{
+    background-color: #2a2a2a;
+}
+.navbar{
+    font-size: 18px;
+    top: 0;
+    left: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    padding: 0 20px;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar i.active{
+    color: crimson;
+}
+
+.navbar i {
+    font-size: 1.5rem;
+    padding: 0 7px;
+    cursor: pointer;  
+    transition: 0.3s ease;
+}
+
+#bar{
+    font-size: 1.5rem;
+    padding: 7px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: #000000;
+}
+
+#bar:hover,
+#bar.active{
+    color: white;
+}
+
+@media only screen and (max-width: 991px) {
+    body > nav > div > button:hover,
+    body > nav > div > button:focus{
+        background-color: crimson;
+    }
+
+    body > nav > div > button:hover #bar,
+    body > nav > div > button:focus #bar{
+        color: white;
+    }
+
+    #navbarSupportedContent > ul {
+        margin: 1.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #navbarSupportedContent > ul > li:nth-child(n) > a{
+        padding-bottom: 10px;
+    }
+
+}
+
+/*Mobile Nav*/
+
+.navbar-light .navbar-toggler{
+    border: none;
+    outline: none;
+}
+
+.navbar .fa-bag-shopping{
+    font-size: 1.7rem;
+}
+
+#home{
+    background-image:  url(images/Cover.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#home span{
+    color: silver;
+}
+
+#new .one img{
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#new .one .details {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+#new .one:hover .details{
+    cursor: pointer;
+    background-color: rgba(220, 20, 60, 0.6);
+}
+
+#new .one .details button{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    background: none;
+    text-transform: uppercase;
+   border-bottom: 1px solid black;
+    padding: 2.5px;
+    transform: translateY(70px);
+    transition: 0.3s ease;
+} 
+
+#new .one .details button:hover{
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+#new .one:nth-child(1) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+#new .one:nth-child(2) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+#new .one:nth-child(3) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+/*Products*/
+
+.img-fluid{
+    height: 50%;
+    width: auto;
+}
+
+.product{
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.product img{
+    transition: 0.3s all;
+}
+
+.product:hover img{
+    opacity: 0.7;
+}
+
+.product .buy-btn{
+    background-color: crimson;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+.product:hover .buy-btn{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+footer{
+    background-color: #000000;
+}
+
+footer h4{
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+footer h5{
+    color: white;
+}
+
+footer li{
+    padding-bottom: 4px;
+}
+
+footer li a{
+    font-size: 1rem;
+    color: #d8d8d8;
+    transition: 0.3s ease;
+}
+
+footer li a:hover{
+    color: crimson;
+    text-decoration: none;
+}
+
+footer p{
+    font-size: 0.8rem;
+    color: #d8d8d8;
+}
